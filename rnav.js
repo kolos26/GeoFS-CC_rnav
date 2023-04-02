@@ -8,7 +8,7 @@ setInterval(
             instruments.init(geofs.aircraft.instance.setup.instruments);
         }
         //cdi
-        else if(["2808", "4390", "3286", "3460", "3591", "2681", "4398", "4401", "2948"].includes(geofs.aircraft.instance.id) && geofs.aircraft.instance.setup.instruments["cdi"] === undefined){
+        else if(["2808", "4390", "3286", "3460", "3591", "2681", "4398", "4401", "2948", "4140"].includes(geofs.aircraft.instance.id) && geofs.aircraft.instance.setup.instruments["cdi"] === undefined){
             geofs.aircraft.instance.setup.instruments["cdi"] = {"animations": [{"value": "view", "type": "show", "notEq": "cockpit"}]}
             if(geofs.aircraft.instance.setup.instruments["rpm"] !== undefined){ // avoiding to hide the rpm
                 delete geofs.aircraft.instance.setup.instruments["rpm"]
